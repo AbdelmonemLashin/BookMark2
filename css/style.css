@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

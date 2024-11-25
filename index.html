@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Assignment JS 3</title>
+</head>
+
+<body>
+
+    <div class="container text-center py-5 bg-danger text-white">
+        <h1>Bookmarker</h1>
+    </div>
+    <div class="container text-center py-5 shadow-lg">
+        <h2> Bookmark your favorite sites </h2>
+        <div class="form-group text-start">
+            <label for="" class="text-start">Site Name</label>
+            <input onkeyup="chackValidSiteName()" onkeyup="" type="text" class="form-control shadow-lg" name="" id="siteName" aria-describedby="emailHelpId"
+                placeholder="Bookmark Name">
+                
+                <label for="">Site URL</label>
+                <input onkeyup="chackValidSiteUrl()"  type="text" class="form-control shadow-lg" name="" id="siteUrl" aria-describedby="emailHelpId"
+                placeholder="Website URL">
+                <small class="text-danger d-none" id="alertUrl">Already Have This URL</small>
+                
+            </div>
+            <h3 class="text-danger d-none" id="alertSite">Already Have This Site Name Or Site Url</h3>
+        <button class="btn btn-info mt-5 px-5" id="submit" onclick="submitSite()">Submit</button>
+        <!-- <button class="btn btn-info mt-5 px-5"  onclick="findSiteName()">Submit</button> -->
+    
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>index</th>
+                            <th>Website Name</th>
+                            <th>Website URL</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="dataRow">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td> <button class="btn btn-success" id="visit" onclick="visit()">Submit</button></td>
+                            <td> <button class="btn btn-danger" id="delete" onclick=""delete>Delete</button></td>
+
+
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
